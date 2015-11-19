@@ -48,6 +48,6 @@ module.exports = function markdown(str, opts) {
     }
   }, opts));
 
-  str = str || opts.fn(this);
+  str = str || opts.fn(this.context);
   return md.render(str);
 };
